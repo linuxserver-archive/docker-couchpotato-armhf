@@ -55,6 +55,7 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 ```
 
 ## Info
+`IMPORTANT... THIS IS THE ARMHF VERSION`
 
 * To monitor the logs of the container in realtime `docker logs -f couchpotato`.
 

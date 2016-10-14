@@ -13,7 +13,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 # lsioarmhf/couchpotato
 
 
-[![](https://images.microbadger.com/badges/image/lsioarmhf/couchpotato.svg)](http://microbadger.com/images/lsioarmhf/couchpotato "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/couchpotato.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/couchpotato.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-couchpotato)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-couchpotato/)
+[![](https://images.microbadger.com/badges/version/lsioarmhf/couchpotato.svg)](https://microbadger.com/images/lsioarmhf/couchpotato "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/couchpotato.svg)](http://microbadger.com/images/lsioarmhf/couchpotato "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/couchpotato.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/couchpotato.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-couchpotato)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-couchpotato/)
 [hub]: https://hub.docker.com/r/lsioarmhf/couchpotato/
 
 [CouchPotato](https://couchpota.to) is an automatic NZB and torrent downloader. You can keep a "movies I want" list and it will search for NZBs/torrents of these movies every X hours. Once a movie is found, it will send it to SABnzbd or download the torrent to a specified directory.
@@ -63,8 +63,17 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 * To monitor the logs of the container in realtime `docker logs -f couchpotato`.
 
-## Version Log
+* container version number 
 
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' couchpotato`
+
+* image version number
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' lsioarmhf/couchpotato`
+
+## Versions
+
++ **14-10-16:** Add version layer information.
 + **30.09.16:** Fix umask.
 + **11.09.16:** Add layer badges to README.
 + **06.09.16:** Add badges to README.

@@ -79,6 +79,7 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 ## Versions
 
++ **11.11.16:** Stop cp logging to docker log (they are accessible in the webui and the config folder)
 + **14.10.16:** Add version layer information.
 + **30.09.16:** Fix umask.
 + **11.09.16:** Add layer badges to README.

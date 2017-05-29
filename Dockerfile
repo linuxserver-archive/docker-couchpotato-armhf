@@ -1,4 +1,4 @@
-FROM lsiobase/alpine.python.armhf:3.5
+FROM lsiobase/alpine.python.armhf:3.6
 MAINTAINER sparklyballs
 
 # set version label

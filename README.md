@@ -5,6 +5,8 @@
 [appurl]: https://couchpota.to/
 [hub]: https://hub.docker.com/r/lsioarmhf/couchpotato/
 
+THIS IMAGE IS DEPRECATED. PLEASE USE THE MULTI-ARCH IMAGES AT `linuxserver/couchpotato`
+
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
 
 The [LinuxServer.io][linuxserverurl] team brings you another container release featuring easy user mapping and community support. Find us for support at:
@@ -79,6 +81,7 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 ## Versions
 
++ **14.01.19:** This image is deprecated. Please use the multi-arch images at linuxserver/couchpotato
 + **16.08.18:** Rebase to alpine 3.8.
 + **10.01.18:** Rebase to alpine 3.7.
 + **20.07.17:** Internal git pull instead of at runtime, add UMASK_SET variable.
